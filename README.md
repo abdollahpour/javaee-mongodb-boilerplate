@@ -1,0 +1,1 @@
+Easy setup Wildfly and MongoDB include 
