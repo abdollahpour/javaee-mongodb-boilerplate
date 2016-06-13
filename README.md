@@ -13,6 +13,6 @@ Deploy it
 
     maven clean install
     
-You ear file is `ear/target/boilerplate-ear.ear`. You can open [admin panel](localhost:9990) on you wildfly and deploy the ear file.
+You ear file is `ear/target/boilerplate-ear.ear`. You can open [admin panel](localhost:9990) on wildfly and deploy the ear file.
 
 [wildfly-mongodb-module]: https://github.com/abdollahpour/wildfly-mongodb-module
