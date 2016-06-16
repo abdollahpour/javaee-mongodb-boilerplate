@@ -21,9 +21,9 @@ public class Sample {
      */
     public static final String NAME = "name";
 
-    public static final String COMPANY = "name";
+    public static final String COMPANY = "company";
 
-    public static final String AGE = "name";
+    public static final String AGE = "age";
 
     @NotNull
     public String name;

@@ -2,6 +2,7 @@ package org.github.wildfly.mongo.boilerplate.resource;
 
 import org.github.wildfly.mongo.boilerplate.facade.SampleFacade;
 import org.github.wildfly.mongo.boilerplate.model.Sample;
+import org.github.wildfly.mongo.boilerplate.service.MyService;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -20,6 +21,9 @@ public class SampleResource {
 
     @EJB
     private SampleFacade sampleFacade;
+
+    @EJB
+    private MyService myService;
 
     @GET
     public String test() {
