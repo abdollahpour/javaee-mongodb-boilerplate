@@ -1,6 +1,7 @@
 package org.github.wildfly.mongo.boilerplate.facade;
 
 import org.github.wildfly.mongo.boilerplate.model.Sample;
+import org.github.wildfly.mongo.boilerplate.provider.DatastoreProvider;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ArchivePaths;
@@ -26,7 +27,11 @@ public class SampleFacadeTest {
                         // All the models
                         Sample.class.getPackage().getName(),
                         // All the facades
-                        SampleFacade.class.getPackage().getName())
+                        SampleFacade.class.getPackage().getName()
+                )
+                .addClass(
+                        DatastoreProvider.class.getName()
+                )
                 .addAsManifestResource(EmptyAsset.INSTANCE, ArchivePaths.create("beans.xml"))
                 .addAsManifestResource("test-MANIFEST.MF", "MANIFEST.MF");
     }
